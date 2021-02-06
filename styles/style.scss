@@ -1,0 +1,7 @@
+$primaryBtn: deepskyblue; //Variablen
+$textColor: #171717;
+
+@import './header'; //Import von anderen Dateien
+
+.contact {@extend header; /*Styles werden von header übernommen*/ @include flexCenter(row, green); width: 100% - 20%; /*Operatoren*/}
+.contact button {background: $primaryBtn;}

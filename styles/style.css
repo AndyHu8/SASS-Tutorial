@@ -1,0 +1,57 @@
+@charset "UTF-8";
+header, .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*-webkit- etc. automatisch*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: yellow;
+  color: #171717;
+}
+
+header button, .contact button {
+  background: deepskyblue;
+  /*Verschachtelung, statt: header button {}*/
+  /*& ist hier der Button*/
+}
+
+header button:hover, .contact button:hover {
+  background: red;
+}
+
+.contact {
+  /*Styles werden von header übernommen*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*-webkit- etc. automatisch*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: green;
+  width: 80%;
+  /*Operatoren*/
+}
+
+.contact button {
+  background: deepskyblue;
+}
+/*# sourceMappingURL=style.css.map */

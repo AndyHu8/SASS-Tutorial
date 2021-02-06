@@ -1,0 +1,14 @@
+@mixin flexCenter($direction, $bg) { //Mehrmals benutzbar, auch mit Parameter
+    display: flex; /*-webkit- etc. automatisch*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+    background-color: $bg;
+}
+
+header {@include flexCenter(column, yellow);
+    color: $textColor;
+    button {background: $primaryBtn; /*Verschachtelung, statt: header button {}*/
+            &:hover {background: red;} /*& ist hier der Button*/}
+}
